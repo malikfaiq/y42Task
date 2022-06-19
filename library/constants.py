@@ -1,5 +1,6 @@
 from .strategies import LocalDriveUploadStrategy, CloudFileUploadStrategy
 
+# strategy class as per storage destination name substring matching.
 STORAGE_TYP_STRATEGIES = {
     "local": LocalDriveUploadStrategy,
     "cloud": CloudFileUploadStrategy,

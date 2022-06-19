@@ -88,9 +88,9 @@ class LocalDriveUploadStrategy(Strategy):
 
 
 """ 
-
+    Mock Strategy for future implementation for uploading file over Cloud.
 Returns:
-    _type_: _description_
+    str: dummy_url
 """
 
 
