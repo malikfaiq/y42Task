@@ -1,0 +1,990 @@
+{
+	"info": {
+		"_postman_id": "2e91b5ad-d3dd-4fd5-9a77-2fdeec8020fc",
+		"name": "Y42",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insert Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+						},
+						{
+							"key": "file_name",
+							"value": "testing file",
+							"type": "text"
+						},
+						{
+							"key": "library",
+							"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+							"type": "text"
+						},
+						{
+							"key": "file_format",
+							"value": "pdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/library/api/records/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"api",
+						"records",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Insert Record Example Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+								},
+								{
+									"key": "file_name",
+									"value": "testing file",
+									"type": "text"
+								},
+								{
+									"key": "library",
+									"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+									"type": "text"
+								},
+								{
+									"key": "file_format",
+									"value": "pdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/library/api/records/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"api",
+								"records",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 18:16:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "231"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"4418aa76-368a-4722-94af-cd7a69cd31c5\",\n    \"created_on\": \"2022-06-18T18:16:07.565523Z\",\n    \"file_name\": \"testing file\",\n    \"file_format\": \"pdf\",\n    \"file_path\": \"/media/SeniorSE-Task_Vw1GZBc.pdf\",\n    \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Records",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+						},
+						{
+							"key": "file_name",
+							"value": "testing file",
+							"type": "text"
+						},
+						{
+							"key": "library",
+							"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+							"type": "text"
+						},
+						{
+							"key": "file_format",
+							"value": "pdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/library/api/records/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"api",
+						"records",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Records",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+								},
+								{
+									"key": "file_name",
+									"value": "testing file",
+									"type": "text"
+								},
+								{
+									"key": "library",
+									"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+									"type": "text"
+								},
+								{
+									"key": "file_format",
+									"value": "pdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/library/api/records/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"api",
+								"records",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 22:24:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1604"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"e407060b-3a4c-4ee8-85f1-375d23fe7c39\",\n        \"created_on\": \"2022-06-18T18:09:57.643824Z\",\n        \"file_name\": \"testing file3\",\n        \"file_format\": \"pdf\",\n        \"file_path\": \"/media/invite.ics\",\n        \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n    },\n    {\n        \"id\": \"4418aa76-368a-4722-94af-cd7a69cd31c5\",\n        \"created_on\": \"2022-06-18T18:16:07.565523Z\",\n        \"file_name\": \"testing file\",\n        \"file_format\": \"pdf\",\n        \"file_path\": \"/media/SeniorSE-Task_Vw1GZBc.pdf\",\n        \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n    },\n    {\n        \"id\": \"f203bc23-53ae-4358-a353-c8486fbff7b6\",\n        \"created_on\": \"2022-06-18T19:35:34.725459Z\",\n        \"file_name\": \"testing file\",\n        \"file_format\": \"pdf\",\n        \"file_path\": \"/media/SeniorSE-Task_SylQUsX.pdf\",\n        \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n    },\n    {\n        \"id\": \"9a463524-2d68-4454-833c-6d6110dc06b0\",\n        \"created_on\": \"2022-06-18T19:35:37.295649Z\",\n        \"file_name\": \"testing file\",\n        \"file_format\": \"pdf\",\n        \"file_path\": \"/media/SeniorSE-Task_vvLzMOs.pdf\",\n        \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n    },\n    {\n        \"id\": \"3d485620-53eb-493f-9ba3-8ee9372c5814\",\n        \"created_on\": \"2022-06-18T19:35:38.100244Z\",\n        \"file_name\": \"testing file\",\n        \"file_format\": \"pdf\",\n        \"file_path\": \"/media/SeniorSE-Task_RSGRSgQ.pdf\",\n        \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n    },\n    {\n        \"id\": \"988b20ca-7cec-457d-85f3-f0604209bbc9\",\n        \"created_on\": \"2022-06-18T19:35:38.663616Z\",\n        \"file_name\": \"testing file\",\n        \"file_format\": \"pdf\",\n        \"file_path\": \"/media/SeniorSE-Task_bnJEaf5.pdf\",\n        \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n    },\n    {\n        \"id\": \"2392c581-8b30-400f-a110-8ec23afbebbd\",\n        \"created_on\": \"2022-06-18T21:21:45.519561Z\",\n        \"file_name\": \"testing file\",\n        \"file_format\": \"pdf\",\n        \"file_path\": \"/media/invite_eqUz2ew.ics\",\n        \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Records with pagination",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+						},
+						{
+							"key": "file_name",
+							"value": "testing file",
+							"type": "text"
+						},
+						{
+							"key": "library",
+							"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+							"type": "text"
+						},
+						{
+							"key": "file_format",
+							"value": "pdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/library/api/records/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"api",
+						"records",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Records with pagination",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+								},
+								{
+									"key": "file_name",
+									"value": "testing file",
+									"type": "text"
+								},
+								{
+									"key": "library",
+									"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+									"type": "text"
+								},
+								{
+									"key": "file_format",
+									"value": "pdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/library/api/records/?limit=3&offset=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"api",
+								"records",
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "3"
+								},
+								{
+									"key": "offset",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 22:48:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "848"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 20,\n    \"next\": \"http://localhost:8000/library/api/records/?limit=3&offset=7\",\n    \"previous\": \"http://localhost:8000/library/api/records/?limit=3&offset=1\",\n    \"results\": [\n        {\n            \"id\": \"988b20ca-7cec-457d-85f3-f0604209bbc9\",\n            \"created_on\": \"2022-06-18T19:35:38.663616Z\",\n            \"file_name\": \"testing file\",\n            \"file_format\": \"pdf\",\n            \"file_path\": \"/media/SeniorSE-Task_bnJEaf5.pdf\",\n            \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n        },\n        {\n            \"id\": \"2392c581-8b30-400f-a110-8ec23afbebbd\",\n            \"created_on\": \"2022-06-18T21:21:45.519561Z\",\n            \"file_name\": \"testing file\",\n            \"file_format\": \"pdf\",\n            \"file_path\": \"/media/invite_eqUz2ew.ics\",\n            \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n        },\n        {\n            \"id\": \"07e8171b-5eeb-4c7c-9bdd-ef769f3371ac\",\n            \"created_on\": \"2022-06-18T22:44:21.475777Z\",\n            \"file_name\": \"testing file\",\n            \"file_format\": \"pdf\",\n            \"file_path\": \"/media/invite_8bqeIEa.ics\",\n            \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Records with filters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+						},
+						{
+							"key": "file_name",
+							"value": "testing file",
+							"type": "text"
+						},
+						{
+							"key": "library",
+							"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+							"type": "text"
+						},
+						{
+							"key": "file_format",
+							"value": "pdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/library/api/records/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"api",
+						"records",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Records with filters",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+								},
+								{
+									"key": "file_name",
+									"value": "testing file",
+									"type": "text"
+								},
+								{
+									"key": "library",
+									"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+									"type": "text"
+								},
+								{
+									"key": "file_format",
+									"value": "pdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/library/api/records/?library=2a719a34-d39c-4163-884b-3802c4d1d594&file_format=pdf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"api",
+								"records",
+								""
+							],
+							"query": [
+								{
+									"key": "library",
+									"value": "2a719a34-d39c-4163-884b-3802c4d1d594"
+								},
+								{
+									"key": "file_format",
+									"value": "pdf"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 23:13:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "634"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 20,\n    \"next\": \"http://localhost:8000/library/api/records/?file_format=pdf&library=2a719a34-d39c-4163-884b-3802c4d1d594&limit=2&offset=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": \"4418aa76-368a-4722-94af-cd7a69cd31c5\",\n            \"created_on\": \"2022-06-18T18:16:07.565523Z\",\n            \"file_name\": \"testing file\",\n            \"file_format\": \"pdf\",\n            \"file_path\": \"/media/SeniorSE-Task_Vw1GZBc.pdf\",\n            \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n        },\n        {\n            \"id\": \"f203bc23-53ae-4358-a353-c8486fbff7b6\",\n            \"created_on\": \"2022-06-18T19:35:34.725459Z\",\n            \"file_name\": \"testing file\",\n            \"file_format\": \"pdf\",\n            \"file_path\": \"/media/SeniorSE-Task_SylQUsX.pdf\",\n            \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Specific Record",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+						},
+						{
+							"key": "file_name",
+							"value": "testing file",
+							"type": "text"
+						},
+						{
+							"key": "library",
+							"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+							"type": "text"
+						},
+						{
+							"key": "file_format",
+							"value": "pdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/library/api/records/4418aa76-368a-4722-94af-cd7a69cd31c5/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"api",
+						"records",
+						"4418aa76-368a-4722-94af-cd7a69cd31c5",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Specific Record",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/malikfaiq/Downloads/SeniorSE-Task.pdf"
+								},
+								{
+									"key": "file_name",
+									"value": "testing file",
+									"type": "text"
+								},
+								{
+									"key": "library",
+									"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+									"type": "text"
+								},
+								{
+									"key": "file_format",
+									"value": "pdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/library/api/records/4418aa76-368a-4722-94af-cd7a69cd31c5/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"api",
+								"records",
+								"4418aa76-368a-4722-94af-cd7a69cd31c5",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 22:26:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "231"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"4418aa76-368a-4722-94af-cd7a69cd31c5\",\n    \"created_on\": \"2022-06-18T18:16:07.565523Z\",\n    \"file_name\": \"testing file\",\n    \"file_format\": \"pdf\",\n    \"file_path\": \"/media/SeniorSE-Task_Vw1GZBc.pdf\",\n    \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Record",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "file_name",
+							"value": "testing file",
+							"type": "text"
+						},
+						{
+							"key": "library",
+							"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+							"type": "text"
+						},
+						{
+							"key": "file_format",
+							"value": "pdf",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/library/api/records/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"api",
+						"records",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Record",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/malikfaiq/Downloads/invite.ics",
+									"disabled": true
+								},
+								{
+									"key": "file_name",
+									"value": "testing file3",
+									"type": "text"
+								},
+								{
+									"key": "library",
+									"value": "2a719a34-d39c-4163-884b-3802c4d1d594",
+									"type": "text"
+								},
+								{
+									"key": "file_format",
+									"value": "pdf",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/library/api/records/e407060b-3a4c-4ee8-85f1-375d23fe7c39/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"api",
+								"records",
+								"e407060b-3a4c-4ee8-85f1-375d23fe7c39",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 20:09:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "217"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"e407060b-3a4c-4ee8-85f1-375d23fe7c39\",\n    \"created_on\": \"2022-06-18T18:09:57.643824Z\",\n    \"file_name\": \"testing file3\",\n    \"file_format\": \"pdf\",\n    \"file_path\": \"/media/invite.ics\",\n    \"library\": \"2a719a34-d39c-4163-884b-3802c4d1d594\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/library/api/records/c95a3136-3dbd-4aa0-8851-1aff6db608ac/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"api",
+						"records",
+						"c95a3136-3dbd-4aa0-8851-1aff6db608ac",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Record Example Response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/library/api/records/c95a3136-3dbd-4aa0-8851-1aff6db608ac/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"api",
+								"records",
+								"c95a3136-3dbd-4aa0-8851-1aff6db608ac",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 18:21:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

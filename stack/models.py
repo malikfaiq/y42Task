@@ -1,4 +1,3 @@
-from django.db import models
 from .exceptions import NullElementException, EmptyStackException
 
 # Create your models here.
@@ -14,7 +13,6 @@ from .exceptions import NullElementException, EmptyStackException
 
 
 class Stack:
-
     def __init__(self):
         self.data = []
 

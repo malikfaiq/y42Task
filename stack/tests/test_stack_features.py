@@ -3,13 +3,14 @@ from stack.models import Stack
 from stack.exceptions import NullElementException, EmptyStackException
 
 
-class TestStackStructFeatures(TestCase):
-    """
-        This testing class will test out the impilict and explicit behaviour of stack functionality
+"""
+    This testing class will test out the impilict and explicit behaviour of stack functionality
     Args:
         TestCase (object): contains predefiend set of features provides by django framework for testing purposes.
-    """
+"""
 
+
+class TestStackStructFeatures(TestCase):
     def setUp(self):
         self.stack = Stack()
 
